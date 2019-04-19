@@ -16,10 +16,10 @@ cliente = Cliente('MARCOS VINICIO RAMOS CAMARA', '99999999', conta)
 contaService = ContaService()
 
 opcao = ''
-repete = True
-while (repete):
 
-    print "\n\nOpcoes:\n"
+while True:
+
+    print "\n\nEscolha uma opcao:\n"
     print "[1] Deposito" 
     print "[2] Saque" 
     print "[3] Extrato" 
@@ -36,7 +36,7 @@ while (repete):
         contaService.extrato(conta)
     elif (opcao == '4'):
         print 'Programa encerrado!' 
-        repete = False
+        break
         exit()
     else:
         print 'Opcao Invalida: '
