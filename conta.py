@@ -6,11 +6,10 @@ Classe Conta
 
 class Conta:
    
-    def __init__(self, numero, saldo, limite, limiteInicial, totalSaque, totalDeposito):
+    def __init__(self, numero, saldo, limite=1000.0, totalSaque=0.0, totalDeposito=0.0):
         self.numero = numero
         self.saldo = saldo
         self.limite = limite
-        self.limiteInicial = limiteInicial
         self.totalSaque = totalSaque
         self.totalDeposito = totalDeposito
         
@@ -32,11 +31,6 @@ class Conta:
     def getLimite(self):
         return self.limite
     
-    def setLimiteInicial(self, limiteInicial):
-        self.limiteInicial = limiteInicial
-        
-    def getLimiteInicial(self):
-        return self.limiteInicial
     
     def setTotalSaque(self, totalSaque):
         self.totalSaque = totalSaque
